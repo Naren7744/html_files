@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Dynapuff, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  height: 100vh;
+  background-color: #0e0e0e;
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 370px) {
+  body {
+    font-size: 0.6rem;
+  }
+}
+
+/* letters */
+
+.random-word {
+  font-size: 5em;
+  z-index: 10;
+}
+
+.letter {
+  display: inline-block;
+  text-shadow: 2px 4px 8px #000;
+}
+
+.random-move {
+  -webkit-animation: randomMove 0.5s infinite alternate;
+          animation: randomMove 0.5s infinite alternate;
+}
+
+@-webkit-keyframes randomMove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes randomMove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+/* balloons */
+.balloon {
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-animation: balloonMove 5s linear infinite;
+          animation: balloonMove 5s linear infinite;
+}
+
+@-webkit-keyframes balloonMove {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-200vh);
+    opacity: 0;
+  }
+}
+
+@keyframes balloonMove {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-200vh);
+    opacity: 0;
+  }
+}
+
+/* Adjusted positions of the balloons */
+.balloon1 {
+  left: 5%;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.balloon2 {
+  left: 20%;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.balloon3 {
+  left: 35%;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.balloon4 {
+  left: 40%;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.balloon5 {
+  left: 55%;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+.balloon6 {
+  left: 70%;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
